@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" prefHeight="384.0" prefWidth="319.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.calculatorapp.HelloController">
+<VBox alignment="TOP_CENTER" prefHeight="384.0" prefWidth="319.0" spacing="20.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculatorapp.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -28,20 +28,20 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="button1" mnemonicParsing="false" prefHeight="82.0" prefWidth="69.0" text="1" />
-            <Button fx:id="button2" mnemonicParsing="false" prefHeight="78.0" prefWidth="70.0" text="2" GridPane.columnIndex="1" />
-            <Button fx:id="button3" mnemonicParsing="false" prefHeight="84.0" prefWidth="70.0" text="3" GridPane.columnIndex="2" />
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#onClickBut1" prefHeight="82.0" prefWidth="69.0" text="1" />
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#onClickBut2" prefHeight="78.0" prefWidth="70.0" text="2" GridPane.columnIndex="1" />
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#onClickBut3" prefHeight="84.0" prefWidth="70.0" text="3" GridPane.columnIndex="2" />
             <Button fx:id="clear" mnemonicParsing="false" onAction="#onClear" prefHeight="98.0" prefWidth="70.0" text="C" GridPane.columnIndex="3" />
-            <Button fx:id="button4" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="4" GridPane.rowIndex="1" />
-            <Button fx:id="button5" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="button6" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#onClickBut4" prefHeight="79.0" prefWidth="69.0" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#onClickBut5" prefHeight="79.0" prefWidth="69.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#onClickBut6" prefHeight="79.0" prefWidth="69.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Button fx:id="equal" mnemonicParsing="false" onAction="#onEqual" prefHeight="79.0" prefWidth="69.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="button7" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="7" GridPane.rowIndex="2" />
-            <Button fx:id="button8" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="button9" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#onClickBut7" prefHeight="79.0" prefWidth="69.0" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#onClickBut8" prefHeight="79.0" prefWidth="69.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#onClickBut9" prefHeight="79.0" prefWidth="69.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button fx:id="subtraction" mnemonicParsing="false" onAction="#onSub" prefHeight="79.0" prefWidth="69.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <Button fx:id="multiply" mnemonicParsing="false" onAction="#onMultiply" prefHeight="79.0" prefWidth="69.0" text="*" GridPane.rowIndex="3" />
-            <Button fx:id="button0" mnemonicParsing="false" prefHeight="79.0" prefWidth="69.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="button0" mnemonicParsing="false" onAction="#onClickBut0" prefHeight="79.0" prefWidth="69.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button fx:id="addition" mnemonicParsing="false" onAction="#onAddition" prefHeight="79.0" prefWidth="69.0" text="+" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Button fx:id="division" mnemonicParsing="false" onAction="#onDivision" prefHeight="79.0" prefWidth="69.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
