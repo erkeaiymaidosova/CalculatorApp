@@ -83,7 +83,7 @@ public class HelloController {
     @FXML
     private void onClickBut0() {
         String val = inputField.getText();
-        val = val + "9";
+        val = val + "0";
         inputField.setText(val);
 
     }
@@ -91,29 +91,29 @@ public class HelloController {
     @FXML
     private void onSub() {
         String op1 = inputField.getText();
-        calc.setOp1(Integer.parseInt(op1));  // Set first operand
-        calc.setOperator('-');               // Set operator
+        calc.setOp1(Integer.parseInt(op1));
+        calc.setOperator('-');
         inputField.clear();
     }
     @FXML
     private void onMultiply() {
         String op1 = inputField.getText();
-        calc.setOp1(Integer.parseInt(op1));  // Set first operand
-        calc.setOperator('*');               // Set operator
+        calc.setOp1(Integer.parseInt(op1));
+        calc.setOperator('*');
         inputField.clear();
     }
     @FXML
     private void onAddition() {
         String op1 = inputField.getText();
-        calc.setOp1(Integer.parseInt(op1));  // Set first operand
-        calc.setOperator('+');               // Set operator
+        calc.setOp1(Integer.parseInt(op1));
+        calc.setOperator('+');
         inputField.clear();
     }
     @FXML
     private void onDivision() {
         String op1 = inputField.getText();
-        calc.setOp1(Integer.parseInt(op1));  // Set first operand
-        calc.setOperator('/');               // Set operator
+        calc.setOp1(Integer.parseInt(op1));
+        calc.setOperator('/');
         inputField.clear();
     }
     @FXML
